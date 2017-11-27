@@ -5,6 +5,11 @@ def isFormatValid(number):
         return False
     if number[6] != "/":
         return False
+    for i in range(11):
+        if i == 6:
+            continue
+        if not number[i].isdigit():
+            return False
 
     return True
 
@@ -45,6 +50,6 @@ def birthDate(number):
 
     return(day, month, year )
 
-i = birthDate("736028/5163")
 
-print(i)
+def birthNumberStat():
+    return
